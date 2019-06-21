@@ -12,11 +12,13 @@
 .syntax--entity {
 
   &.syntax--name.syntax--type {
-    color: @hue-6-2;
+    color: @hue-2;
+    font-weight: bold;
   }
 
   &.syntax--other.syntax--inherited-class {
-    color: @hue-4;
+    color: @hue-5;
+    font-weight: bold;
   }
 }
 
@@ -25,7 +27,7 @@
   font-weight: bold;
 
   &.syntax--control {
-    color: @hue-3;
+    color: @hue-3-3;
     font-weight: 600;
   }
 
@@ -73,7 +75,7 @@
   }
 
   &.syntax--numeric {
-    color: @hue-6;
+    color: @hue-2;
   }
 
   &.syntax--other.syntax--color {
@@ -86,10 +88,18 @@
 }
 
 .syntax--variable {
-  color: @hue-5;
+  color: @hue-2-4;
+
+  .syntax--punctuation {
+    color: @mono-3;
+
+    &.syntax--destructuring {
+      color: @mono-1;
+    }
+  }
 
   &.syntax--interpolation {
-    color: @hue-5-2;
+    color: @hue-2-2;
   }
 
   &.syntax--parameter {
@@ -100,6 +110,9 @@
 .syntax--string {
   color: @hue-4;
 
+  &.syntax--punctuation {
+    color: @hue-4-2;
+  }
 
   &.syntax--regexp {
     color: @hue-1;
@@ -115,6 +128,7 @@
 }
 
 .syntax--punctuation {
+  color: @mono-3;
   &.syntax--definition {
     &.syntax--comment {
       color: @mono-3;
@@ -178,12 +192,12 @@
 
 .syntax--entity {
   &.syntax--name.syntax--function {
-    color: @hue-2;
+    color: @hue-3-2;
   }
 
   &.syntax--name.syntax--class,
   &.syntax--name.syntax--type.syntax--class {
-    color: @hue-6-2;
+    color: @hue-5-2;
   }
 
   &.syntax--name.syntax--section {
@@ -191,7 +205,7 @@
   }
 
   &.syntax--name.syntax--tag {
-    color: @hue-5;
+    color: @hue-6-2;
   }
 
   &.syntax--other.syntax--attribute-name {
