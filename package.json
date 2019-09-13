@@ -1,14 +1,14 @@
 {
-  "name": "perplex-syntax",
+  "name": "perplex-light-syntax",
   "theme": "syntax",
   "version": "1.0.0",
-  "description": "A dark syntax theme",
+  "description": "A light syntax theme",
   "keywords": [
     "dark",
     "blue",
     "syntax"
   ],
-  "repository": "https://github.com/atom/one-dark-syntax",
+  "repository": "https://github.com/davenquinn/perplex-syntax",
   "license": "MIT",
   "engines": {
     "atom": ">0.50.0"

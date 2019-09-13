@@ -2,17 +2,16 @@
 // Config -----------------------------------
 @syntax-hue:          200;
 @syntax-saturation:   13%;
-@syntax-brightness:   8%;
-
+@syntax-brightness:   94%;
 
 // Monochrome -----------------------------------
 @mono-1: hsl(@syntax-hue, 14%, 71%); // default text
-@mono-2: hsl(@syntax-hue,  9%, 55%);
+@mono-2: hsl(@syntax-hue, 12%, 55%);
 @mono-3: hsl(@syntax-hue, 10%, 40%);
 @mono-4: hsl(@syntax-hue, 10%, 30%);
 
 // Colors -----------------------------------
-@hue-1:   hsl(187, 47%, 55%); // <-cyan
+@hue-1:   hsl(187, 67%, 55%); // <-cyan
 @hue-2:   hsl(207, 82%, 66%); // <-blue
 @hue-2-2: hsl(207, 55%, 51%);
 @hue-2-3: hsl(201, 58%, 54%); // <-blue
@@ -21,13 +20,48 @@
 @hue-3-2: hsl(253, 59%, 67%);
 @hue-3-3: hsl(241, 53%, 59%);
 @hue-4:   hsl(168, 62%, 45%); // <-green
-@hue-4-2: hsl(168, 55%, 78%);
+@hue-4-2: hsl(168, 55%, 68%);
 
 @hue-5:   hsl(355, 65%, 65%); // <-red 1
 @hue-5-2: hsl(  5, 48%, 51%); // <-red 2
 
 @hue-6:   hsl(290, 29%, 50%); // <-orange 1
 @hue-6-2: hsl(290, 67%, 69%); // <-orange 2
+
+
+// Base colors -----------------------------------
+@syntax-fg:     @mono-1;
+@syntax-bg:     hsl(@syntax-hue, @syntax-saturation, @syntax-brightness);
+@syntax-gutter: darken(@syntax-fg, 26%);
+@syntax-guide:  fade(@syntax-fg, 15%);
+@syntax-accent: hsl(@syntax-hue, 100%, 56% );
+
+// Light mode color adjustments
+
+@mono-1: hsl(@syntax-hue, 14%, 20%); // default text
+@mono-2: hsl(@syntax-hue, 12%, 33%);
+@mono-3: hsl(@syntax-hue, 10%, 45%);
+@mono-4: hsl(@syntax-hue, 10%, 51%);
+
+// Colors -----------------------------------
+/*
+@hue-1:   hsl(187, 47%, 45%); // <-cyan
+@hue-2:   hsl(207, 82%, 46%); // <-blue
+@hue-2-2: hsl(207, 55%, 35%);
+@hue-2-3: hsl(201, 58%, 30%); // <-blue
+@hue-2-4: hsl(206, 30%, 25%);
+@hue-3:   hsl(286, 60%, 42%); // <-purple
+@hue-3-2: hsl(253, 59%, 57%);
+@hue-3-3: hsl(241, 53%, 49%);
+@hue-4:   hsl(168, 82%, 35%); // <-green
+@hue-4-2: hsl(168, 65%, 42%);
+
+@hue-5:   hsl(355, 65%, 55%); // <-red 1
+@hue-5-2: hsl(  5, 48%, 41%); // <-red 2
+
+@hue-6:   hsl(290, 29%, 35%); // <-orange 1
+@hue-6-2: hsl(290, 67%, 44%); // <-orange 2
+*/
 
 
 // Base colors -----------------------------------
